@@ -23,6 +23,20 @@
 	\tableofcontents
 	
 	\section{Inleiding}
+	\section{Inleiding}
+	
+	In dit practicum vergelijken we verschillende methoden om lineaire
+	stelsels op te lossen. Gegeven een matrix \(A \in \mathbb{C}^{n\times n}\)
+	en een vector \(b \in \mathbb{C}^{n\times 1}\), zoeken we een vector
+	\(x \in \mathbb{C}^{n\times 1}\) waarvoor \(Ax=b\). We bekijken het oplossen
+	via de inverse van \(A\) en via LU-factorisatie. De nadruk ligt op
+	QR-factorisatie als alternatief voor LU-factorisatie.
+	
+	Als toepassing gebruiken we QR-factorisatie om met de
+	kleinstekwadratenmethode een veelterm aan gegeven datapunten aan te
+	passen. We vergelijken veeltermen van verschillende graden om een
+	model te kiezen dat het onderliggende verband goed benadert en
+	zo eenvoudig mogelijk blijft.
 	
 	\section{Numerieke technieken om een stelsel op te lossen}
 	\subsection{Inverteren}
@@ -30,7 +44,6 @@
 	\begin{equation}
 		x = A \label{eq:1}
 	\end{equation}
-	
 	te gebruiken in plaats van 
 	\begin{equation}
 	x = inv(A)*b\label{eq:2}
