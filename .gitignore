@@ -35,3 +35,61 @@ codegen/
 
 
 .DS_Store
+
+
+# ==========================================
+# LaTeX
+# ==========================================
+
+# Auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex.gz(busy)
+
+# Bibliography
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# Index and glossary
+*.idx
+*.ilg
+*.ind
+*.ist
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+
+# Beamer presentations
+*.nav
+*.snm
+*.vrb
+
+# Other generated files
+*.dvi
+*.xdv
+*.synctex
+*.pdfsync
+*.figlist
+*.makefile
+*.auxlock
+
+# Minted package
+_minted-*/
+*.pyg
+
+# Temporary files
+*.tex~
+*.tex.bak
+*.synctex(busy)
