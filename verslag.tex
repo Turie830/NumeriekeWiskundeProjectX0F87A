@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 
+
 \title{Practicum Numerieke Wiskunde}
 \author{Arthur Pintelon, Obe Willaert, Joran Naessens}
 \date{Academiejaar 2026-2027}
@@ -25,37 +26,48 @@
 	
 	\section{Numerieke technieken om een stelsel op te lossen}
 	\subsection{Inverteren}
-	\subsubsection*{Opdracht 1.}
-	\subsubsection*{Opdracht 2.}
+	Om het stelsel \(Ax=b\) op te lossen, is het beter om 
+	\begin{equation}
+		|x = A| \label{eq:1}
+	\end{equation}
+	
+	te gebruiken in plaats van 
+	\begin{equation}
+	|x = inv(A)*b| \label{eq:2}
+	\end{equation}
+	Er is minder rekenwerk nodig bij \ref{eq:1}, aangezien Matlab bij \ref{eq:2} alle kolommen van \(A^{-1}\) en vermenigvuldigt die matrix vervolgens met \(b\). De backslash-operator berekent rechtstreeks de vector \(x\).
+	
+	Bij \ref{eq:1} krijgen we ook een kleiner residu, bij \ref{eq:2} kunnen afrondingsfouten voorkomen bij zowel de berekening van de inverse als de vermenigvuldiging met \(b\). De backslash-operator levert doorgaans een kleiner residu.
+	
+	
+	
+	
+	
 	
 	\subsection{LU-ontbinding}
-	\subsubsection*{Opdracht 3.}
+	
 	
 	
 	\subsection{QR-ontbinding}
-	\subsubsection*{Opdracht 4.}
-	\subsubsection*{Opdracht 5.}
-	\subsubsection*{Opdracht 6.}
+	
 	
 	
 	\section{Studie van de besproken methodes}
-	\subsubsection*{Opdracht 7.}
+	
 	
 	
 	\section{Toepassing: Veelterm data-fitting}
 	
 	\subsection{Normaalvergelijkingen}
-	\subsubsection*{Opdracht 8.}
-	
+
 	\subsection{QR-factorisatie}
-	\subsubsection*{Opdracht 9.}
+	
 	
 	\subsection{Optimale orde}
-	\subsubsection*{Opdracht 10.}
-	\subsubsection*{Opdracht 11.}
-	\subsubsection*{Opdracht 12.}
-	\subsubsection*{Opdracht 13.}
 	
+	
+	
+	\section{Besluit}
 	
 	
 	
