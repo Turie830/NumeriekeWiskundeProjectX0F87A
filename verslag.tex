@@ -6,7 +6,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
-
+\usepackage{listings}
 
 \title{Practicum Numerieke Wiskunde}
 \author{Arthur Pintelon, Obe Willaert, Joran Naessens}
@@ -33,7 +33,7 @@
 	
 	te gebruiken in plaats van 
 	\begin{equation}
-	x = inv(A)*b|\label{eq:2}
+	x = inv(A)*b\label{eq:2}
 	\end{equation}
 	Er is minder rekenwerk nodig bij \ref{eq:1}, aangezien Matlab bij \ref{eq:2} alle kolommen van \(A^{-1}\) en vermenigvuldigt die matrix vervolgens met \(b\). De backslash-operator berekent rechtstreeks de vector \(x\).
 	
@@ -41,6 +41,9 @@
 	
 	
 	
+	 De functie \ref{code:1} krijgt de coëfficiëntenmatrix \(A\) en
+	het rechterlid \(b\) als invoer. Ze berekent \(A^{-1}\) met \texttt{inv}
+	en geeft de oplossing \(x = A^{-1}b\) terug.
 	
 	
 	
@@ -70,6 +73,14 @@
 	\section{Besluit}
 	
 	
+	
+	
+	
+	\appendix
+	\section{MATLAB-code}
+	
+	\subsection{Oplossen door inverteren}
+	\label{code:1}\lstinputlisting[language=Matlab, basicstyle=\ttfamily\small]{src/util/solve_inv.m}
 	
 	
 	
